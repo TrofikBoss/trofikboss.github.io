@@ -42,7 +42,7 @@
 			характеристиками) используют атрибуты <code>sizes</code> и <code>srcset</code>.
 			Атрибут <code>sizes</code> задаёт размеры изображения для разных макетов страницы.
 			Атрибут <code>srcset</code> задаёт путь к графическим файлам с учётом размера изображения и устройств.
-		<img src="images/redcat.jpg" srcset="images/redcat.jpg 500w, images/redcat.jpg 1000w" sizes="420px, 200px" alt="Кошка">
+		<img src="images/redcat.jpg"alt="Кошка">
 		<p><b>Задание 4.</b> Вставьте на страницу изображение <code>mushroom.jpg</code> или
 			<code>mushroom_portrait.jpg</code> или <code>mushroom_landscape.jpg</code> или
 			<code>mushroom_retina.jpg</code> в соответствии со следующими
@@ -54,7 +54,7 @@
 			<li>для экранов с шириной от 768px до 992px и DPR=2 используйте <code>mushroom_retina.jpg</code>;</li>
 			<li>во всех остальных случаях используйте <code>mushroom.jpg</code>.</li>
 		</ul>
-		<img width="500" src="images/mushroom.jpg" srcset="images/mushroom_portrait.jpg 576w, images/mushroom_retina.jpg 992w" alt="Гриб">
+		<img style="max-width: 500px" src="images/mushroom.jpg" srcset="images/mushroom_portrait.jpg 300w, images/mushroom_landscape.jpg 600w, images/mushroom_retina.jpg 1200w" sizes="(max-width: 576px) 300px, (max-width: 768px) 600px, (max-width: 992px) 1200px" alt="Гриб">
 		<h2>Подпись к изображению</h2>
 		<p>Для группирования любых элементов, например, изображений и подписей к ним используется элемент
 			<code>figure</code>.
