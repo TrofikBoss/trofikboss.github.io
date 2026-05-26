@@ -11,7 +11,8 @@ header {
 }
 .header__nav__ul li {
     transition-duration: 0.3s;
-}
+} 
+
 .header__nav__ul li:hover {
     background-color: var(--bs-success);
     color: white;
