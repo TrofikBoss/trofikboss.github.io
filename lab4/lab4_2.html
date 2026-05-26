@@ -38,6 +38,39 @@
 			.menu li li {
 					
 			}
+			.icon::before {
+	            content: '';
+	            width: 16px;
+	            height: 16px;
+	            float: left;
+	            margin-right: 4px;
+				font-family: "Font Awesome 5 Free";
+	        }
+	        .icon.point::before {
+				content: '\f192';
+	            background-position: -16px -16px;
+	        }
+	        .icon.minus::before {
+				content: '\f146';
+	            background-position: -16px -63px;
+	        }
+			.icon.plus::before {
+				content: '\f0fe';
+	            background-position: -16px -63px;
+	        }
+	        ul {
+	            list-style: none;
+	        }
+			.menu ul li ul {
+				display: none;
+			}
+			.menu ul li:hover ul {
+				display: block;
+			}
+			.menu ul li:hover .icon.plus::before {
+				content: '\f146';
+	            background-position: -16px -63px;
+	        }
 	</style>
 </head>
 <body>
@@ -76,40 +109,5 @@
 			</li>
 		</ul>
 	</nav>
-    <style>
-        .icon::before {
-            content: '';
-            width: 16px;
-            height: 16px;
-            float: left;
-            margin-right: 4px;
-			font-family: "Font Awesome 5 Free";
-        }
-        .icon.point::before {
-			content: '\f192';
-            background-position: -16px -16px;
-        }
-        .icon.minus::before {
-			content: '\f146';
-            background-position: -16px -63px;
-        }
-		.icon.plus::before {
-			content: '\f0fe';
-            background-position: -16px -63px;
-        }
-        ul {
-            list-style: none;
-        }
-		.menu ul li ul {
-			display: none;
-		}
-		.menu ul li:hover ul {
-			display: block;
-		}
-		.menu ul li:hover .icon.plus::before {
-			content: '\f146';
-            background-position: -16px -63px;
-        }
-    </style>
 </body>
 </html>
